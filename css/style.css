@@ -121,6 +121,23 @@ html{
     width: 100%;
 }
 
+.scrolling-text{
+    font-size: 24px;
+    padding:10px 0;
+    display:inline-block;
+    animation: scroll 10s linear infinite;
+    font-variant: small-caps;
+    font-style: oblique;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
 
 .hero-sect{
 background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
