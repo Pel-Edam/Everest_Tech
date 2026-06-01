@@ -11,6 +11,12 @@
       }
     ],
     "apple-touch-icons": "off",
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "axe/structure": [
+      "default",
+      {
+        "dlitem": "off"
+      }
+    ]
   }
 }

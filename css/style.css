@@ -101,7 +101,6 @@ html{
     width: 100%;
 }
 
-
 .nav-link::after{
     content: '';
     position: absolute;
@@ -187,7 +186,7 @@ box-shadow: var(--shadow);
 
 @keyframes fadeInLeft {
     from {opacity: 0; transform: translateX(-100px);}
-    to {opacity: 1; transform: translateY(0);}
+    to {opacity: 1; transform: translateX(0);}
 }
 
 .sect{
@@ -198,7 +197,6 @@ box-shadow: var(--shadow);
     height: auto;
     width: auto;
 }
-
 
 .card-grid{
     /* background: var(--color-primary); */
