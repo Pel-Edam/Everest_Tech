@@ -41,16 +41,24 @@ button{
     </style>
 </head>
 <body>
-<header class="header">
+    <header class="header">
         <h1 class="aura">Everest_<span class="special">Tech⛰</span></h1>
+                <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search Everest_Tech...">
+            <button id="search-submit">🔎</button>
+        </div>
         <nav class="nav">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="recommended.html">Recommended</a>
-            <a class="nav-link" href="#">Shopping Cart</a>
-            <a class="nav-link" href="login.html">Login</a>
-            <button class="to-cart" onclick="toggleDarkMode()">Light/Dark Mode</button>
+            <a href="index.html">Home</a>
+         <div class="header-actions">
+            <a href="#" class="nav-action-item cart-btn">🛒 Cart <span id="cart-count">0</span></a>
+            <a class="nav-link"  href="login.html">Hello, Sign in</a>
+            <button class="theme-toggle" onclick="toggleDarkMode()" id="mode-switcher">
+                <span class="theme-icon">🌙</span> <span class="theme-text">Theme</span>
+            </button>
+         </div>
+
         </nav>
-</header>
+    </header>
     <div class="login-box">
         <h2 style="font-style: oblique; font-variant: small-caps;">Login</h2>
 
@@ -68,7 +76,7 @@ button{
 <p class="hidden" id="hide1">Proceed to <a class="nav-link" href="index.html">Home</a></p>
 <p class="hidden" id="hide2">Proceed to <a class="nav-link" href="adminindex.html">Admin Page</a></p>
 
-        <span class="scrolling-text">Everest_<span class="special">Tech⛰</span> | The Next-Gen Tech Hub</span>
+      <span class="scrolling-text">Everest_<span class="special">Tech⛰</span> | The Next-Gen Tech Hub. Everything tech... In One Place!! </span>
 
 <script type="text/javascript" src="js/script.js"></script>
 
@@ -154,22 +162,18 @@ button{
             <option>Canada</option>
         </select>
     </div>
-
+         <div class="contact-details">
+                <p><strong>Contact Us:</strong> <span>07063055769, 09017226458</span></p>
+                <p><strong>Email Contacts:</strong> <span class="email-list">oluwapelumiedamisan@mtu.edu.ng, oluwanifiseadeleye@mtu.edu.ng, oghenekparoboiyeke@mtu.edu.ng, olwasheunfunmiaremu@mtu.edu.ng, ayenidaniel@mtu.edu.ng, fayemiilerioluwa@mtu.edu.ng</span></p>
+                <p><strong>Core Specialties:</strong> <span>Electronics, Audio systems, Mobile phones, System Laptops, etc.</span></p>
+            </div>
+            <div class="marketing-details">
+                <a href="#">Everest_Ads<span>Reach customers wherever they spend their time</span></a>
+                <a href="#">EverestGlobal<span>Ship Orders Internationally and Nationwide</span></a>
+            </div>
+        </div>
 </div>
 
-<div class="footer-bottom">
-
-    <div>
-        <a href="#">Contact Us<span>07063055769,  09017226458</span></a>
-         <a href="#">Email Us<span>oluwapelumiedamisan@mtu.edu.ng,  oluwanifiseadeleye@mtu.edu.ng,  oghenekparoboiyeke@mtu.edu.ng,    oluwasheunfunmiaremu@mtu.edu.ng,  ayenidaniel@mtu.edu.ng,    fayemiilerioluwa@mtu.edu.ng</span></a>
-        <a href="#">Other Business inludes<span>Electronic, Earpiece and buds, Phones, Laptops, etc</span></a>
-    </div>
-
-    <div>
-        <a href="#">Everest_Ads<span>Reach customers wherever they spend their time</span></a>
-        <a href="#">EverestGlobal<span>Ship Orders Internationally and Nation wide</span></a>
-    </div>
-</div>
 </footer>
 </body>
 </html>

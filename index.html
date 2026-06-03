@@ -21,12 +21,19 @@
 <body class="dark-mode">
     <header class="header">
         <h1 class="aura">Everest_<span class="special">Tech⛰</span></h1>
+                <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search Everest_Tech...">
+            <button id="search-submit">🔎</button>
+        </div>
         <nav class="nav">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Recommended</a>
-            <a class="nav-link" href="#">Shopping Cart</a>
-            <a class="nav-link" href="login.html">Login</a>
-            <button class="to-cart" onclick="toggleDarkMode()">Light/Dark Mode</button>
+         <div class="header-actions">
+            <a href="#" class="nav-action-item cart-btn">🛒 Cart <span id="cart-count">0</span></a>
+            <a class="nav-link"  href="login.html">Hello, Sign in</a>
+            <button class="theme-toggle" onclick="toggleDarkMode()" id="mode-switcher">
+                <span class="theme-icon">🌙</span> <span class="theme-text">Theme</span>
+            </button>
+         </div>
+
         </nav>
     </header>
     <section class="hero-sect">
@@ -36,7 +43,7 @@
     </section>
 
     <section class="sect">
-<nav>
+<nav aria-label="Category Navigation">
   <a class="nav-link2" href="#phones">Phones</a>
   <a class="nav-link2" href="#laptops">Laptops</a>
   <a class="nav-link2" href="#tablets">Tablets</a>
@@ -47,11 +54,13 @@
   <a class="nav-link2" href="#smart-home">Smart Home</a>
   <a class="nav-link2" href="#cameras">Cameras</a>
   <a class="nav-link2" href="#storage">Storage</a>
+  <a class="nav-link2" href="recommended.html">Recommended</a>
   <a class="nav-link2" href="#networking">Networking</a>
   <a class="nav-link2" href="deals.html">Deals</a>
 </nav>
     </section>
     <p class="first-text">Welcome, US3R!</p>
+<h2 class="section-title">Smartphones</h2>
   <section id="phones" class="card-grid">
          <section class="product-cards">
             <p class="product-title">iPhone 12 Pro Max</p>
@@ -83,6 +92,7 @@
             <button title="addToCart" class="to-cart" type="submit">Add to Cart</button>
          </section>
 </section>
+<h2 class="section-title">Laptops</h2>
 <section id="laptops" class="card-grid">
          <section class="product-cards">
             <p class="product-title">MacBook Air M3</p>
@@ -113,6 +123,7 @@
             <button title="addToCart" class="to-cart" type="submit">Add to Cart</button>
          </section>
 </section>
+<h2 class="section-title">Tablets</h2>
 <section id="tablets" class="card-grid">
          <section class="product-cards">
             <p class="product-title">iPad Air M2 </p>
@@ -143,6 +154,7 @@
             <button title="addToCart" class="to-cart" type="submit">Add to Cart</button>
          </section>
 </section>
+<h2 class="section-title">Wearables</h2>
 <section id="wearables" class="card-grid">
          <section class="product-cards">
             <p class="product-title">Apple Watch Series 10 </p>
@@ -173,6 +185,7 @@
             <button title="addToCart" class="to-cart" type="submit">Add to Cart</button>
          </section>
 </section>
+<h2 class="section-title">Audio</h2>
 <section id="audio" class="card-grid">
          <section class="product-cards">
             <p class="product-title">AirPods Pro 2</p>
@@ -203,6 +216,7 @@
             <button title="addToCart" class="to-cart" type="submit">Add to Cart</button>
          </section>
 </section>
+<h2 class="section-title">Accessories</h2>
 <section id="accessories" class="card-grid">
          <section class="product-cards">
             <p class="product-title">Anker Power Bank 20000mAh</p>
@@ -233,6 +247,7 @@
             <button title="addToCart" class="to-cart" type="submit">Add to Cart</button>
          </section>
 </section>
+<h2 class="section-title">Smart-Home</h2>
 <section id="smart-home" class="card-grid">
          <section class="product-cards">
             <p class="product-title">Amazon Echo Dot</p>
@@ -263,6 +278,7 @@
             <button title="addToCart" class="to-cart" type="submit">Add to Cart</button>
          </section>
 </section>
+<h2 class="section-title">Cameras</h2>
 <section id="cameras" class="card-grid">
          <section class="product-cards">
             <p class="product-title">Canon EOS R50 </p>
@@ -293,6 +309,7 @@
             <button title="addToCart" class="to-cart" type="submit">Add to Cart</button>
 </section>
 </section>
+<h2 class="section-title">Storage</h2>
 <section id="storage" class="card-grid">
          <section class="product-cards">
             <p class="product-title"></p>
@@ -324,7 +341,7 @@
 </section>
 </section>
 <!-- The end........ -->
-      <span class="scrolling-text">Everest_<span class="special">Tech⛰</span> | The Next-Gen Tech Hub</span>
+      <span class="scrolling-text">Everest_<span class="special">Tech⛰</span> | The Next-Gen Tech Hub. Everything tech... In One Place!! </span>
 <!-- the footer stuff sha -->
  <footer class="footer">
 
@@ -408,22 +425,18 @@
             <option>Canada</option>
         </select>
     </div>
-
+         <div class="contact-details">
+                <p><strong>Contact Us:</strong> <span>07063055769, 09017226458</span></p>
+                <p><strong>Email Contacts:</strong> <span class="email-list">oluwapelumiedamisan@mtu.edu.ng, oluwanifiseadeleye@mtu.edu.ng, oghenekparoboiyeke@mtu.edu.ng, olwasheunfunmiaremu@mtu.edu.ng, ayenidaniel@mtu.edu.ng, fayemiilerioluwa@mtu.edu.ng</span></p>
+                <p><strong>Core Specialties:</strong> <span>Electronics, Audio systems, Mobile phones, System Laptops, etc.</span></p>
+            </div>
+            <div class="marketing-details">
+                <a href="#">Everest_Ads<span>Reach customers wherever they spend their time</span></a>
+                <a href="#">EverestGlobal<span>Ship Orders Internationally and Nationwide</span></a>
+            </div>
+        </div>
 </div>
 
-<div class="footer-bottom">
-
-    <div>
-        <a href="#">Contact Us<span>07063055769,  09017226458</span></a>
-         <a href="#">Email Us<span>oluwapelumiedamisan@mtu.edu.ng,  oluwanifiseadeleye@mtu.edu.ng,  oghenekparoboiyeke@mtu.edu.ng,    oluwasheunfunmiaremu@mtu.edu.ng,  ayenidaniel@mtu.edu.ng,    fayemiilerioluwa@mtu.edu.ng</span></a>
-        <a href="#">Other Business inludes<span>Electronic, Earpiece and buds, Phones, Laptops, etc</span></a>
-    </div>
-
-    <div>
-        <a href="#">Everest_Ads<span>Reach customers wherever they spend their time</span></a>
-        <a href="#">EverestGlobal<span>Ship Orders Internationally and Nation wide</span></a>
-    </div>
-</div>
 </footer>
 <script type="text/javascript" src="js/script.js"></script>
 </body>

@@ -19,13 +19,22 @@
     </style>
 </head>
 <body>
-        <header class="header">
-    <h1 class="first-text">ADM1N Tasks</h1>
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="recommended.html">Recommended</a>
-            <a class="nav-link" href="#">Shopping Cart</a>
-            <a class="nav-link" href="login.html">Login</a>
-            <button class="to-cart" onclick="toggleDarkMode()">Light/Dark Mode</button>
+    <header class="header">
+        <h1 class="aura">Everest_<span class="special">Tech⛰</span></h1>
+                <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search Everest_Tech...">
+            <button id="search-submit">🔎</button>
+        </div>
+        <nav class="nav">
+         <div class="header-actions">
+            <a href="index.html">Home</a>
+            <a href="#" class="nav-action-item cart-btn">🛒 Cart <span id="cart-count">0</span></a>
+            <a class="nav-link"  href="login.html">Hello, Sign in</a>
+            <button class="theme-toggle" onclick="toggleDarkMode()" id="mode-switcher">
+                <span class="theme-icon">🌙</span> <span class="theme-text">Theme</span>
+            </button>
+         </div>
+
         </nav>
     </header>
     <h2 class="about" style="color: var(--color-accent);">Current Tasks</h2>
@@ -35,15 +44,6 @@
     <br>
     <dd>Recommended page</dd>
     <dt>Adegoke (@Ade16k)</dt>
-    <br>
-    <dd>Nav restructure</dd>
-    <dt>Ayeni Daniel</dt>
-    <br>
-    <dd>The shopping cart nonsense</dd>
-    <dt>Ayeni Daniel</dt>
-    <br>
-    <dd>On-load greeting</dd>
-    <dt>Ayeni Daniel</dt>
     <br>
     <dd>The product cards for the index.html page</dd>
     <dt>Obaro Enoch</dt>
@@ -68,6 +68,18 @@
     <br>
     <dd>Images for the index.html page</dd>
     <dt>Favour (@Fhay)</dt>
+    <br>
+    <dd>Nav restructure</dd>
+    <dt>Ayeni Daniel</dt>
+    <br>
+    <dd>The shopping cart button</dd>
+    <dt>Ayeni Daniel</dt>
+    <br>
+    <dd>Footer and Products Grid Refinement</dd>
+    <dt>Ayeni Daniel</dt>
+    <br>
+    <dd>Git Add, Commit and Push</dd>
+    <dt>Edamisan (@Pel_3dam)</dt>
 </div>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
