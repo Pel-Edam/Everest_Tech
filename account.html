@@ -1,46 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everest_Tech⛰ | Log-In</title>
+    <title>Everest_Tech⛰ | Your Account</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-*{
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.hidden{
-    display:none;
-}
-
-button{
-    padding:10px 20px;
-    margin:20px;
-    cursor:pointer;
-}
-
-body{
+    body{
     background:var(--color-secondary);
     color:var(--color-primary);
     transition:0.3s;
 }
-
-.dark-mode{
+    .dark-mode{
     background: var(--color-primary);
     color: var(--color-secondary);
 }
-
-button{
-    padding: 0;
-    margin:20px;
-    cursor:pointer;
-    height: fit-content;
-}
-    </style>
+  </style>
 </head>
-<body>
+<body class="dark-mode">
     <header class="header">
         <h1 class="aura">Everest_<span class="special">Tech⛰</span></h1>
                 <div class="search-box">
@@ -50,35 +27,87 @@ button{
         <nav class="nav">
             <a class="nav-link" href="index.html">Home</a>
          <div class="header-actions">
+            <a href="#" class="nav-action-item cart-btn">🛒 Cart <span id="cart-count">0</span></a>
             <a class="nav-link"  href="login.html">Hello, Sign in</a>
             <button class="theme-toggle" onclick="toggleDarkMode()" id="mode-switcher">
                 <span class="theme-icon">🌙</span> <span class="theme-text">Theme</span>
             </button>
          </div>
-
         </nav>
     </header>
-    <div class="login-box">
-        <h2 style="font-style: oblique; font-variant: small-caps;">Login</h2>
-
-        <form>
-            <input id="check1" class="input" type="text" placeholder="Username">
-<br>
-            <input id="check2" class="input" type="password" placeholder="Password">
-<br>
-        </form>
-            <button id="logIn" class="to-cart" type="submit">Sign-in</button>
+<h1 class="aura" style="padding-top: 50px;">Your Account</h1>
+<div class="card-grid">
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Your Orders</strong></p>
+            <p class="product-description">Track, return, cancel an order, download invoice or try again</p>
+        </section>
     </div>
-
-    <p>Don't have an account? <a class="nav-link" href="register.html">Register!!</a></p>
-
-<p class="hidden" id="hide1">Proceed to <a class="nav-link" href="index.html">Home</a></p>
-<p class="hidden" id="hide2">Proceed to <a class="nav-link" href="adminindex.html">Admin Page</a></p>
-
-      <span class="scrolling-text">Everest_<span class="special">Tech⛰</span> | The Next-Gen Tech Hub. Everything tech... In One Place!! </span>
-
-<script type="text/javascript" src="js/script.js"></script>
-
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Login And Security</strong></p>
+            <p class="product-description">Edit Login, name and mobile number</p>
+        </section>
+    </div>
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Your Addresses</strong></p>
+            <p class="product-description">Edit, Remive or set default addresses</p>
+        </section>
+    </div>
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Your Payments</strong></p>
+            <p class="product-description">View all transactions, mamage payment methods and settings</p>
+        </section>
+    </div>
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Digital Sevices and Device Support</strong></p>
+            <p class="product-description">Troubleshoot device issues, manage or cancel digital subscriptions</p>
+        </section>
+    </div>
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Wish-List</strong></p>
+            <p class="product-description">View, modify and share your lists, or create new ones</p>
+        </section>
+    </div>
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Customer Service</strong></p>
+            <p class="product-description">Browse self servive options, help articles or contact us</p>
+        </section>
+    </div>
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Inbox</strong></p>
+            <p class="product-description">View or respond to messages from Everest_Tech, Sellers and Buyers</p>
+        </section>
+    </div>
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Memberships and Subscriptions</strong></p>
+            <p class="product-description">Audible Membership, Subscribe & Save, Other Subscriptions</p>
+        </section>
+    </div>
+    <div class="card-grid">
+        <section class="class-card">
+            <aside><div class="class-logo"></div></aside>
+            <p><strong>Manage Your Data</strong></p>
+            <p class="product-description">request your data, Manage apps & services with data access, Close yuor Account, Privacy Notice</p>
+        </section>
+    </div>
+</div>
  <footer class="footer">
 
 <div class="back-to-top">
@@ -169,5 +198,6 @@ button{
 </div>
 
 </footer>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

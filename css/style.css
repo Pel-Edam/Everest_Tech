@@ -60,6 +60,7 @@ a{
 .nav{
     display: flex;
     gap: 30px;
+    position: sticky;
 }
 
 .nav-link{
@@ -386,6 +387,22 @@ box-shadow: var(--shadow);
     border-color: var(--color-accent);
     box-shadow: var(--highlight);
     transition: var(--transition);
+}
+
+.class-card{
+    padding: 10px;
+    border-radius: var(--radius);
+    height: 150px;
+    width: 250px;
+    border: 1px solid var(--color-secondary);
+    margin: 20px;
+}
+
+.class-card:hover{
+    transform: translateY(-5px)  scale(1.01) ;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 2px solid var(--color-accent);
 }
 
 .dark-mode{
