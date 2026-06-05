@@ -335,7 +335,7 @@ box-shadow: var(--shadow);
 }
 
 .product-description{
-    font-size: 0.9 rem;
+    font-size: 0.65rem;
     color: var(--color-descriptext);
     margin-top: 5px;
 }
@@ -358,8 +358,8 @@ box-shadow: var(--shadow);
 }
 
 .product-img{
-    height: 50%;
-    width: 50%;
+    height:50%;
+    width: 75%;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
