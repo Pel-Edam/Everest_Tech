@@ -17,8 +17,65 @@
 }
   </style>
 </head>
-<body>
-    
+    <body class="dark-mode">
+    <header class="header">
+        <h1 class="aura">Everest_<span class="special">Tech⛰</span></h1>
+                <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search Everest_Tech...">
+            <button id="search-submit">🔎</button>
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="index.html">Home</a>
+         <div class="header-actions">
+            <a href="#" class="nav-action-item cart-btn">🛒 Cart <span id="cart-count">0</span></a>
+            <a class="nav-link"  href="login.html">Hello, Sign in</a>
+            <button class="theme-toggle" onclick="toggleDarkMode()" id="mode-switcher">
+                <span class="theme-icon">🌙</span> <span class="theme-text">Theme</span>
+            </button>
+         </div>
+
+        </nav>
+    </header>
+    <section class="hero-sect">
+        <p class="first-text">EVEREST_<span class="special">Tech⛰</span></p> <span class="second-text">The Next-Gen Tech Hub</span>
+        <br>
+        <p class="about">Everything tech... In one place!</p>
+    </section>
+
+    <section class="sect">
+<nav aria-label="Category Navigation">
+  <a class="nav-link2" href="recommended.html">Recommended</a>
+  <a class="nav-link2" href="deals.html">Deals</a>
+</nav>
+   </section>
+   <section class="sect2">
+       <h1 class="aura">Your Orders</h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search All Orders">
+            <button id="search-submit">Search Orders</button>
+        </div>
+   </section>
+
+<nav aria-label="Category Navigation">
+  <a class="nav-link2" href="#">Orders</a>
+  <a class="nav-link2" href="#buy-again">Buy Again</a>
+  <a class="nav-link2" href="#notshipped">Not Yet Shipped</a>
+  <a class="nav-link2" href="#wearables">Digital Orders</a>
+</nav>
+<br>
+<br>
+<br>
+            <div class="form-group">
+                <label class="product-description" for="periodSelect"><p><strong>0 Orders</strong> placed in</p> </label>
+                <select class="period-select">
+                    <option value="breakfast">past 3 months</option>
+                    <option value="lunch">past 6 months</option>
+                    <option value="dinner">past 9 months</option>
+                    <option value="snack">past year</option>
+                </select>
+            </div>
+ 
+            <p style="display: flex;">Looks like you haven't placed an order yet.  <a class="nav-link3" href="#"> View Orders in 2026</a></p>
 
 <footer class="footer">
 
