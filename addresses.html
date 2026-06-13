@@ -20,42 +20,134 @@
     </style>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="aura">Everest_<span class="special">Tech⛰</span></h1>
+                <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search Everest_Tech...">
+            <button id="search-submit">🔎</button>
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="index.html">Home</a>
+         <div class="header-actions">
+            <a class="nav-link"  href="login.html">Hello, Sign in</a>
+            <button class="theme-toggle" onclick="toggleDarkMode()" id="mode-switcher">
+                <span class="theme-icon">🌙</span> <span class="theme-text">Theme</span>
+            </button>
+         </div>
 
-<footer class="footer">
+        </nav>
+    </header>
+        <h2 class="about">Add/Edit Address</h2>
+        <div class="sect3">        
+        <form>
+            <!-- Address Type -->
+            <div>
+                <label class="required">Address Type</label>
+                <div>
+                    <label>
+                        <input type="radio" name="addressType" value="home" checked>
+                        Home
+                    </label>
+                    <label>
+                        <input type="radio" name="addressType" value="work">
+                        Work
+                    </label>
+                    <label>
+                        <input type="radio" name="addressType" value="other">
+                        Other
+                    </label>
+                </div>
+            </div>
+
+            <!-- Full Name -->
+            <div>
+                <label for="fullName" class="required">Full Name</label>
+                <input class="input2" type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+                <label for="phone" class="required">Phone Number</label>
+                <input input2 type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email" class="required">Email Address</label>
+                <input class="input2" type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <!-- Street Address -->
+            <div>
+                <label for="street" class="required">Street Address</label>
+                <input class="input2" type="text" id="street" name="street" placeholder="Enter street address" required>
+            </div>
+
+            <!-- Apartment/Suite (Optional) -->
+            <div>
+                <label for="apartment">Apartment/Suite Number (Optional)</label>
+                <input class="input2" type="text" id="apartment" name="apartment" placeholder="Apartment, suite, etc.">
+            </div>
+
+            <!-- City and State -->
+            <div>
+                <div>
+                    <label for="city" class="required">City</label>
+                    <input class="input2" type="text" id="city" name="city" placeholder="Enter city" required>
+                </div>
+                <div>
+                    <label for="state" class="required">State/Province</label>
+                    <input class="input2" type="text" id="state" name="state" placeholder="Enter state/province" required>
+                </div>
+            </div>
+
+            <!-- Postal Code and Country -->
+            <div>
+                <div>
+                    <label for="postalCode" class="required">Postal Code</label>
+                    <input class="input2" type="text" id="postalCode" name="postalCode" placeholder="Enter postal code" required>
+                </div>
+                <div>
+                    <label for="country" class="required">Country</label>
+                    <select class="period-select" id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="AU">Australia</option>
+                        <option value="IN">India</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Default Address Checkbox -->
+            <div>
+                <label>
+                    <input type="checkbox" id="defaultAddress" name="defaultAddress">
+                    Set as default address
+                </label>
+            </div>
+
+            <!-- Buttons -->
+            <div>
+                <button class="to-cart" type="submit" class="btn-save">Save Address</button>
+                <button class="to-cart" type="reset" class="btn-cancel">Clear</button>
+            </div>
+        </form>
+    </div>
+
+ <footer class="footer">
 
 <div class="back-to-top">
     <a href="#">Return To Top</a>
 </div>
 
 <div class="footer-top">
-
     <div class="footer-column">
         <h3>Get to Know Us</h3>
         <ul>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About Everest_Tech</a></li>
-        </ul>
-    </div>
-
-    <div class="footer-column">
-        <h3>Support us </h3>
-        <ul>
-            <li><a href="#">Sell products on Everest_Tech</a></li>
-            <li><a href="#">Sell apps on Everest_Tech</a></li>
-            <li><a href="#">Become an Affiliate</a></li>
-            <li><a href="#">Advertise Your Products</a></li>
-        </ul>
-    </div>
-
-    <div class="footer-column">
-        <h3>Everest_Tech Payment Products</h3>
-        <ul>
-            <li><a href="#">Everest_Tech Business Card</a></li>
-            <li><a href="#">Shop with Points</a></li>
-            <li><a href="#">Reload Your Balance</a></li>
-            <li><a href="#">Everest Tech Currency Converter</a></li>
+            <li><a href="about.html">About Everest_Tech</a></li>
         </ul>
     </div>
 
@@ -64,10 +156,8 @@
         <ul>   
             <li><a href="account.html">Your Account</a></li>
             <li><a href="orders.html">Your Orders</a></li>
-            <li><a href="#">Help</a></li>
         </ul>
     </div>
-
 </div>
 
 <div class="footer-middle">
@@ -82,14 +172,6 @@
              <option>Spanish</option>
               <option>German</option> 
         </select>
-
-        <select>
-            <option>NGN - Nigerian Naira</option>
-            <option>USD - American Dollar</option>
-            <option>EUR - Euros</option>
-            <option>PND - Pounds </option>
-        </select>
-
         <select>
             <option>United States</option>
             <option>Nigeria</option>
@@ -110,7 +192,7 @@
             </div>
         </div>
 </div>
-
+        <p>&copy; 2026 Everest_Tech⛰. All Rights Reserved.</p>
 </footer>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
